@@ -1,0 +1,19 @@
+{
+  "name": "ATE(AtCoder Extensions)",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "description": "この拡張機能を使えばAtCoderを便利に使えます。",
+  "content_scripts": [{
+    "matches": ["https://atcoder.jp/users/*/history*"],
+    "js": ["js/color/color(mode1).js"]
+   },{
+    "matches": ["https://atcoder.jp/*"],
+    "css": ["css/subheader.css"]
+   },{
+    "matches": ["https://atcoder.jp/*"],
+    "js": ["js/icon.js"]
+   },{
+    "matches": ["https://atcoder.jp/users/*?contestType=heuristic"],
+    "js": ["js/Heuristic-rating.js"]
+   }]
+}
